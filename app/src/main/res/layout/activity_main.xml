@@ -90,8 +90,7 @@
                 android:layout_height="45dp"
                 android:layout_weight="1"
                 android:backgroundTint="@color/principal"
-                android:text="Iniciar sesión"
-                app:cornerRadius="2dp" />
+                android:text="Login"/>
 
             <Button
                 android:id="@+id/btnRegister"
@@ -99,9 +98,8 @@
                 android:layout_height="45dp"
                 android:layout_weight="1"
                 android:backgroundTint="@color/white"
-                android:text="Registrarse"
-                android:textColor="@color/principal"
-                app:cornerRadius="2dp" />
+                android:text="Register"
+                android:textColor="@color/principal"/>
         </LinearLayout>
 
     </LinearLayout>

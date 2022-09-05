@@ -24,7 +24,7 @@
             android:layout_marginTop="24dp"
             android:fontFamily="@font/rubik_medium"
             android:text="Encuentra tu"
-            android:textColor="#FFFFFF"
+            android:textColor="@color/white"
             android:textSize="18sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -82,23 +82,29 @@
 
         <Button
             android:id="@+id/btnFind"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="120dp"
+            android:layout_height="45dp"
+            android:backgroundTint="@color/white"
             android:text="Buscar"
+            android:textColor="@color/principal"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.291"
+            app:layout_constraintHorizontal_bias="0.139"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/spFilter" />
 
         <Button
             android:id="@+id/btnHistory"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="120dp"
+            android:layout_height="45dp"
+            android:backgroundTint="@color/white"
             android:text="Historial"
+            android:textColor="@color/principal"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.664"
             app:layout_constraintStart_toEndOf="@+id/btnFind"
-            app:layout_constraintTop_toBottomOf="@+id/spFilter" />
+            app:layout_constraintTop_toBottomOf="@+id/spFilter"
+            app:layout_constraintVertical_bias="0.0" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

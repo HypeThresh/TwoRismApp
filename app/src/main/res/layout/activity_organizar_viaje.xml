@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/scrollView"
@@ -8,13 +8,13 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:orientation="vertical">
 
         <LinearLayout
             android:id="@+id/linearLayout"
             android:layout_width="match_parent"
-            android:layout_height="600dp"
+            android:layout_height="wrap_content"
             android:layout_marginHorizontal="20dp"
             android:layout_marginTop="20dp"
             android:orientation="vertical"
@@ -23,7 +23,7 @@
             <ImageButton
                 android:id="@+id/imageButtonBack"
                 android:layout_width="74dp"
-                android:layout_height="100dp"
+                android:layout_height="wrap_content"
                 android:layout_gravity="end"
                 android:layout_weight="1"
                 android:backgroundTint="@color/principal"
@@ -116,7 +116,7 @@
             <EditText
                 android:id="@+id/txtTravelIncludes"
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
+                android:layout_height="wrap_content"
                 android:ems="10"
                 android:gravity="start|top"
                 android:inputType="textMultiLine" />
@@ -131,7 +131,7 @@
             <EditText
                 android:id="@+id/txtTravelExcludes"
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
+                android:layout_height="wrap_content"
                 android:ems="10"
                 android:gravity="start|top"
                 android:inputType="textMultiLine" />
@@ -156,7 +156,7 @@
             <EditText
                 android:id="@+id/txtOrigen"
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
+                android:layout_height="wrap_content"
                 android:ems="10"
                 android:inputType="textPersonName" />
 
@@ -170,62 +170,42 @@
             <EditText
                 android:id="@+id/txtLLegada"
                 android:layout_width="match_parent"
-                android:layout_height="62dp"
+                android:layout_height="wrap_content"
                 android:ems="10"
                 android:inputType="textPersonName" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnPublicarViaje"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/white"
+                    android:textColor="@color/principal"
+                    app:cornerRadius="20dp"
+                    android:text="Publicar Viaje" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnUbicaciones"
+                android:layout_gravity="end"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:cornerRadius="20dp"
+                android:drawableLeft="@drawable/ic_baseline_restore_24"
+                android:drawableTint="@color/white"
+                android:backgroundTint="@color/principal"
+                android:text="Reinicar" />
 
 
         </LinearLayout>
 
-        <Button
-            android:id="@+id/btnUbicaciones"
-            android:layout_width="260dp"
-            android:layout_height="55dp"
-            android:layout_marginTop="232dp"
-            android:text="Reinicar proceso"
-            app:layout_constraintBottom_toTopOf="@+id/guideline5"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.496"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/guideline2"
-            app:layout_constraintVertical_bias="1.0" />
-
-        <TextView
-            android:id="@+id/textView39"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Detalles Ubicaciones"
-            android:textSize="20dp"
-            app:layout_constraintBottom_toTopOf="@+id/linearLayout5"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.495"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/guideline2"
-            app:layout_constraintVertical_bias="0.0" />
-
-        <Button
-            android:id="@+id/btnPublicarViaje"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Publicar Viaje"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.48"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/guideline5"
-            app:layout_constraintVertical_bias="0.658" />
-
-        <TextView
-            android:id="@+id/textoAdvertencia"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Seleccione las ubicaciones"
-            app:layout_constraintBottom_toTopOf="@+id/btnPublicarViaje"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/guideline5"
-            app:layout_constraintVertical_bias="0.74" />
-
     </LinearLayout>
 
-</ScrollView>
+</LinearLayout>

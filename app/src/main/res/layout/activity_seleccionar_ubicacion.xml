@@ -25,6 +25,7 @@
             android:layout_width="85dp"
             android:layout_height="wrap_content"
             android:text="Latitud:"
+            android:textColor="@color/letter"
             android:textSize="19dp" />
 
         <TextView
@@ -46,6 +47,7 @@
             android:layout_width="80dp"
             android:layout_height="wrap_content"
             android:textSize="19dp"
+            android:textColor="@color/letter"
             android:text="Longitud:" />
 
         <TextView
@@ -67,5 +69,8 @@
         android:id="@+id/btnGuardarUbicacion"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:backgroundTint="@color/principal"
+        app:cornerRadius="20dp"
+        android:layout_marginTop="20dp"
         android:text="Guardar Ubicaciones" />
 </LinearLayout>
