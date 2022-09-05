@@ -11,11 +11,10 @@
         android:id="@+id/btnBack"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_margin="20dp"
         android:backgroundTint="@color/principal"
         android:drawableLeft="@drawable/ic_baseline_arrow_back_24"
         android:drawableTint="@color/white"
-        android:layout_margin="20dp"
-        android:layout_gravity="end"
         android:text="Regresar" />
 
     <androidx.recyclerview.widget.RecyclerView
