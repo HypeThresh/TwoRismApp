@@ -41,6 +41,8 @@ public class ProviderMainActivity extends AppCompatActivity {
             builder.show();
             btnAddVehicle.setEnabled(false);
             btnListarVehiculo.setEnabled(false);
+            btnListTravels.setEnabled(false);
+            btnOrganizarViaje.setEnabled(false);
 
         }
 
