@@ -50,6 +50,7 @@
 
             <EditText
                 android:id="@+id/fechaPartida"
+                android:hint="mm/dd/yy"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:autofillHints=""

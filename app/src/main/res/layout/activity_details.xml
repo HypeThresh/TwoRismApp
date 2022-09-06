@@ -192,32 +192,16 @@
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="136dp"
         android:backgroundTint="@color/principal"
         android:drawableRight="@drawable/ic_baseline_airplane_ticket_24"
         android:drawableTint="@color/white"
         android:text="adquirir"
         app:cornerRadius="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/mapaView"
         app:layout_constraintVertical_bias="0.627" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="45dp"
-        android:layout_height="45dp"
-        android:layout_marginEnd="16dp"
-        android:backgroundTint="@color/white"
-        android:drawableRight="@drawable/ic_baseline_bookmark_add_24"
-        android:drawableTint="@color/principal"
-
-        app:layout_constraintBottom_toBottomOf="@+id/button"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.974"
-        app:layout_constraintStart_toEndOf="@+id/button"
-        app:layout_constraintTop_toTopOf="@+id/button"
-        app:layout_constraintVertical_bias="0.0" />
 
     <RatingBar
         android:id="@+id/ratingBar2"
